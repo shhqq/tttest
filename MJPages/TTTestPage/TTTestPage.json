@@ -1,0 +1,9 @@
+
+
+
+{
+  "usingComponents": {
+    "wux-tag": "/dist/tag/index"
+  },
+  "disableScroll": true
+}

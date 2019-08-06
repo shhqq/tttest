@@ -1,0 +1,81 @@
+<!-- <wux-button block type="balanced" bind:click="clickChangeIcon">更换图标</wux-button> -->
+<view id='me-content'>
+  <view id='me-top-background'></view>
+  <view id='me-bottom-background'></view>
+  <view id='me-detail-content'>
+
+
+    <view id='me-head-content'>
+      <view id='me-head-avatar-bg'>
+        <image id='me-head-avatar' src='http://pic.9ht.com/up/2018-8/2018082016513659505.jpg'></image>
+
+      </view>
+
+
+      <view id='me-head-middle'>
+        <text id='me-head-middle-name'></text>
+        <view id='me-head-middle-organization'>
+          <button id='me-head-middle-organization-change'></button>
+          <text id='me-head-middle-organization-name'></text>
+        </view>
+      </view>
+    </view>
+
+    <view id='me-tab'>
+      <view class='me-tab-item' id='me-tab-favorite'>
+        <view class='me-tab-item-icon-content'>
+          <image class='me-tab-item-icon' src='../../assets/images/fireSelected.png'></image>
+        </view>
+        <text class='me-tab-item-icon-title'>点赞</text>
+      </view>
+      <view class='me-tab-item' id='me-tab-discuss'>
+        <view class='me-tab-item-icon-content'>
+          <image class='me-tab-item-icon' src='../../assets/images/spaceSelected.png'></image>
+        </view>
+        <text class='me-tab-item-icon-title'>评论</text>
+      </view>
+      <view class='me-tab-item' id='me-tab-zan'>
+        <view class='me-tab-item-icon-content'>
+          <image class='me-tab-item-icon' src='../../assets/images/meSelected.png'></image>
+        </view>
+        <text class='me-tab-item-icon-title'>收藏</text>
+      </view>
+    </view>
+
+    <view id='me-body'>
+      <view id='me-body-background'>
+
+        <view class='me-body-item'>
+          <view class='me-body-item-icon-bg'>
+            <image class='me-body-item-icon' src='../../assets/images/search.png'></image>
+          </view>
+          <view class='me-tab-item-title-bg'>
+            <text class='me-tab-item-title'>悄悄话</text>
+          </view>
+        </view>
+        
+
+        <view class='me-body-item'>
+          <view class='me-body-item-icon-bg'>
+            <image class='me-body-item-icon' src='../../assets/images/space.png'></image>
+          </view>
+          <view class='me-tab-item-title-bg'>
+            <text class='me-tab-item-title'>切换身份</text>
+          </view>
+        </view>
+        
+
+        <view class='me-body-item'>
+          <view class='me-body-item-icon-bg'>
+            <image class='me-body-item-icon' src='../../assets/images/base.png'></image>
+          </view>
+          <view class='me-tab-item-title-bg'>
+            <text class='me-tab-item-title'>设置</text>
+          </view>
+        </view>
+  
+      </view>
+
+    </view>
+  </view>
+</view>

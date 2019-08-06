@@ -1,0 +1,36 @@
+<view id='tab-view'>
+  <wux-tabs wux-class="bordered" controlled current="{{ key }}" bindchange="onTabsChange">
+    <block wx:for="{{ tabs }}" wx:key="key">
+      <wux-tab key="{{ item.key }}" title="{{ item.title }}"></wux-tab>
+    </block>
+  </wux-tabs>
+</view>
+
+<view id='body-view'>
+  <swiper current="{{ index }}" bindchange="onSwiperChange">
+    <block wx:for="{{ tabs }}" wx:key="key">
+      <swiper-item>
+        <!-- 分页item -->
+        <view id='main-swiper-item'>
+          <!-- 分段器 -->
+          <view id='main-segmented'>
+            <wux-segmented-control default-current="0" values="{{ ['早餐', '午餐', '晚餐'] }}" />
+          </view>
+          <!-- 刷新器 -->
+          <view id='main-refresh-view'>
+            <component-scroll id='load-more' pulldownDistance="50" refreshPulldownText="你再往下拉试试" refreshUndoText="你松开试试" refreshLoadingText="我在努力刷新中~" loadmoreLoadingText="正在从库里捞数据" loadmoreAllloadedText="取之不尽,用之完矣" isNeedLoadmore bind:_loadmore="loadmore" bind:_refresh="refresh"
+              allloaded="{{allloaded}}" isEmpty="{{!loading &&list.length<=0}}">
+
+              <view class='list'>
+                <block wx:for="{{list}}" wx:key="{{index}}">
+                  <view class='list-item'>{{item.name}}</view>
+                </block>
+              </view>
+            </component-scroll>
+          </view>
+
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>

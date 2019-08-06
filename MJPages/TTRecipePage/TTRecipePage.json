@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "component-scroll": "/Components/LoadMore/index",
+    "wux-tabs": "/dist/tabs/index",
+    "wux-tab": "/dist/tab/index",
+    "wux-segmented-control": "/dist/segmented-control/index",
+    "wux-refresher": "/dist/refresher/index"
+  },
+    "disableScroll": true
+}

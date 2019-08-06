@@ -1,0 +1,44 @@
+<view class="content">
+  <view class="base-info-content">
+    <!-- 头像 -->
+    <view class="avatar">
+
+    </view>
+    <!-- 基本信息展示 -->
+    <view class="detail-base-info-content">
+      <view class="top-detail-base-info-content">
+        <!-- 菜品名称 -->
+        <view class="name-top-detail-base-info-content">
+
+        </view>
+        <!-- 菜品价格 -->
+        <view class="price-top-detail-base-info-content">
+
+        </view>
+
+      </view>
+      <!-- 打算在这里放标签 -->
+      <view class="bottom-detail-base-info-content">
+
+      </view>
+
+    </view>
+  </view>
+
+
+  <!-- 交互信息展示 -->
+  <view class="user-interface-content">
+    <!-- 点赞数 -->
+    <view class="zan-user-interface-content"></view>
+
+    <view class="line-user-interface-content"></view>
+    <!-- 评论数 -->
+    <view class="discuss-user-interface-content"></view>
+
+    <view class="line-user-interface-content"></view>
+    <!-- 收藏数 -->
+    <view class="favorite-user-interface-content"></view>
+
+  </view>
+
+</view>

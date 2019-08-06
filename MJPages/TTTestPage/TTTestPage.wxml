@@ -1,0 +1,92 @@
+<text>MJPages/TTTestPage/TTTestPage.wxml</text>
+
+
+
+<block wx:for="{{cells}}" data-item="item" wx:for-index="idx">
+
+  <view class="content">
+    <view class="base-info-content">
+      <!-- 头像 -->
+      <view class="avatar-bg">
+        <image class="avatar" src="../../assets/images/me-avatar.png"></image>
+      </view>
+      <!-- 基本信息展示 -->
+      <view class="detail-base-info-content">
+        <view class="top-detail-base-info-content">
+          <!-- 菜品名称 -->
+          <text class="name-top-detail-base-info-content">鱼香肉丝盖浇饭</text>
+          <!-- 菜品价格 -->
+          <text class="price-top-detail-base-info-content">12.5元</text>
+        </view>
+        <!-- 打算在这里放标签 -->
+        <view class="bottom-detail-base-info-content">
+          <wux-tag color="green">米饭免费</wux-tag>
+          <wux-tag color="green">微辣</wux-tag>
+          <wux-tag color="green">12345678</wux-tag>
+          <wux-tag color="green">哈哈哈哈哈哈哈哈</wux-tag>
+          <wux-tag color="green">第二份半价</wux-tag>
+          <wux-tag color="green">第二份半价</wux-tag>
+          <wux-tag color="green">第二份半价</wux-tag>
+          <wux-tag color="green">第二份半价</wux-tag>
+        </view>
+      </view>
+    </view>
+
+
+    <!-- 交互信息展示 -->
+    <view class="user-interface-content">
+      <!-- 点赞数 -->
+      <view class="user-interface-item" id="zan">
+        <view class="user-interface-item-center">
+          <image class="user-interface-item-image" src="../../assets/images/zan.png"></image>
+          <text class="user-interface-item-text">20</text>
+        </view>
+      </view>
+      <!-- 评论数 -->
+      <view class="user-interface-item" id="discuss">
+        <view class="user-interface-item-center">
+          <image class="user-interface-item-image" src="../../assets/images/discuss.png"></image>
+          <text class="user-interface-item-text">300</text>
+        </view>
+      </view>
+      <!-- 收藏数 -->
+      <view class="user-interface-item" id="favorite">
+        <view class="user-interface-item-center">
+          <image class="user-interface-item-image" src="../../assets/images/favorite.png"></image>
+          <text class="user-interface-item-text">6</text>
+        </view>
+      </view>
+    </view>
+
+  </view>
+
+
+
+
+  <!-- 删除 编辑 添加  -->
+  <!-- 交互信息展示 -->
+    <view class="user-interface-content" id="B">
+      <!-- 点赞数 -->
+      <view class="user-interface-item" id="zan">
+        <view class="user-interface-item-center">
+          <image class="user-interface-item-image" src="../../assets/images/delete.png"></image>
+          <text class="user-interface-item-text">删除</text>
+        </view>
+      </view>
+      <!-- 评论数 -->
+      <view class="user-interface-item" id="discuss">
+        <view class="user-interface-item-center">
+          <image class="user-interface-item-image" src="../../assets/images/edit.png"></image>
+          <text class="user-interface-item-text">编辑</text>
+        </view>
+      </view>
+      <!-- 收藏数 -->
+      <view class="user-interface-item" id="favorite">
+        <view class="user-interface-item-center">
+          <image class="user-interface-item-image" src="../../assets/images/add.png"></image>
+          <text class="user-interface-item-text">添加</text>
+        </view>
+      </view>
+    </view>
+
+</block>
